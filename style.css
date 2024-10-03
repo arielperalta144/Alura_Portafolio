@@ -1,0 +1,363 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.tudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Menú */
+.menu {
+  background-color: #4a4a4a;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu__header img {
+  width: 100px;
+}
+
+.menu-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu__list__item {
+  display: inline;
+  margin: 0 20px;
+}
+
+.menu__list__item a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu__list__item a:hover {
+  color: #ff9800;
+}
+
+/* Título */
+.title {
+  text-align: center;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #ff9800, #ff4081);
+  border-radius: 20px;
+  color: #fff;
+}
+
+.title__profile {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.title__container {
+  margin-top: 20px;
+}
+
+.title__network {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.title__network__item {
+  margin: 0 15px;
+}
+
+.title__network__item a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.title__network__item a:hover {
+  transform: scale(1.1);
+}
+
+.title__network__item img {
+  margin-left: 5px;
+  width: 15px;
+}
+
+/* Secciones */
+.about, .skills, .hobbies, .academic, .experience, .formcontato {
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about__title, .skills__title, .hobbies__title, .academic__title, .experience__section__title, .formcontato__title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* Skill y Hobbies */
+.skills__line, .hobbies__line, .academic__courses, .experience__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__box, .hobbies__box, .academic__courses__box {
+  margin: 15px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.skills__box:hover, .hobbies__box:hover {
+  transform: scale(1.05);
+}
+
+/* Imagen de skills */
+.skills__img img {
+  width: 100%; /* Toma el 100% del contenedor */
+  max-width: 374px; /* Tamaño máximo de la imagen */
+  height: auto; /* Mantiene la proporción */
+}
+
+/* Formación Académica */
+.academic {
+  background-color: #f8f9fa; /* Color de fondo suave */
+  padding: 40px 20px;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.academic__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #343a40; /* Color oscuro para el título */
+}
+
+.academic__courses__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.academic__courses__item {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #ffffff; /* Fondo blanco para cada ítem */
+  border-radius: 5px; /* Bordes redondeados en ítems */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Sombra en los ítems */
+  transition: transform 0.3s;
+}
+
+.academic__courses__item:hover {
+  transform: scale(1.02);
+}
+
+.academic__courses__item__img {
+  margin-right: 15px;
+}
+
+.academic__courses__item__img img {
+  max-width: 50px; /* Tamaño del logo */
+  height: auto; /* Mantiene la proporción */
+}
+
+.academic__courses__item__details {
+  flex-grow: 1;
+}
+
+.academic__courses__item__title {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #007bff; /* Color azul para los títulos */
+}
+
+.academic__courses__item__subtitle {
+  margin: 0;
+  color: #6c757d; /* Color gris para el subtítulo */
+}
+
+/* Formulario de Contacto */
+.formcontato__contacto {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del formulario */
+.formcontato__img {
+  width: 45%;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.formcontato__img:hover {
+  transform: scale(1.05);
+}
+
+/* Texto del formulario */
+.formcontato__text {
+  width: 50%;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ff4081, #ff9800);
+  color: #fff;
+}
+
+/* Estilo del formulario */
+.formcontato__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formcontato__input, .formcontato__textarea {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 2px solid #ff9800;
+  border-radius: 10px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.formcontato__input:focus, .formcontato__textarea:focus {
+  border: 2px solid #ff4081;
+  box-shadow: 0 0 5px rgba(255, 64, 129, 0.5);
+}
+
+/* Botón */
+.formcontato__botao {
+  padding: 15px;
+  background: radial-gradient(circle, #ff9800, #ff4081);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.formcontato__botao:hover {
+  background: radial-gradient(circle, #ff4081, #ff9800);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer__rodape {
+  text-align: center;
+  padding: 10px 0;
+  color: #777;
+}
+
+/* Sección de Experiencia Profesional */
+.experience {
+  background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative; /* Para permitir formas de fondo */
+  overflow: hidden; /* Para ocultar formas que sobresalgan */
+}
+
+/* Estilo del título */
+.experience__section__title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #ff4081;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.experience__section__title::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 10px;
+  background: #ff9800;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+/* Caja de experiencia */
+.experience__box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px; /* Espacio entre proyectos */
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen de experiencia */
+.experience__img {
+  width: 150px; /* Ajusta el tamaño según sea necesario */
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+/* Títulos de experiencia */
+.experience__title {
+  font-size: 1.8em;
+  color: #333;
+}
+
+.experience__text {
+  font-size: 1.2em;
+  color: #777;
+}
+
+/* Botones */
+.experience__botao--repo,
+.experience__botao--demo {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.experience__botao--repo {
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  color: #fff;
+}
+
+.experience__botao--repo:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #388e3c, #4caf50);
+}
+
+.experience__botao--demo {
+  background: linear-gradient(135deg, #2196f3, #64b5f6);
+  color: #fff;
+}
+
+.experience__botao--demo:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #1976d2, #2196f3);
+}
